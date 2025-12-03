@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Web form</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+        width: 500px;
+        margin: auto;
+        background: rgb(255, 194, 249);
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid rgb(255, 255, 0);
+    }
+    h2 {
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>แบบสอบถาม</h2>
+<hr>
+
+<div class="container">
+    <h3>ข้อมูลผู้ตอบแบบสอบถาม</h3>
+
+    <form>
+
+        <label style="display:inline-block; width:100px;">ชื่อ-นามสกุล</label>
+        <input type="text" style="width:200px"><br>
+
+        <label style="display:inline-block; width:100px;">รหัสนักศึกษา</label>
+        <input type="text" style="width:200px"><br><br>
+
+        <label>เพศ</label><br>
+        <input type="radio" id="male"   name="sex" value="male"> ชาย
+        <input type="radio" id="female" name="sex" value="female"> หญิง
+        <br><br>
+
+        <label for="faculty" style="display:inline-block; width:100px; vertical-align:top;"><b>สังกัดคณะ</b></label>
+        <select id="faculty" size="9">
+            <option>วิทยาศาสตร์</option>
+            <option>วิทยาการคอมพิวเตอร์</option>
+            <option>ครุศาสตร์</option>
+            <option>บริหารและการจัดการธุรกิจ</option>
+            <option>มนุษยศาสตร์</option>
+            <option>เทคโนโลยีอุตสาหกรรม</option>
+            <option>เกษตรศาสตร์</option>
+            <option>พยาบาลศาสตร์</option>
+            <option>สาธารณสุขศาสตร์</option>
+            <option>แพทย์แผนไทยและทางเลือก</option>
+            <option>นิติศาสตร์</option>
+        </select>
+        <br><br>
+
+        <b>แม่สีที่ชอบ</b><br>
+        <input type="checkbox" name="color" value="red"> สีแดง
+        <input type="checkbox" name="color" value="green"> สีเขียว
+        <input type="checkbox" name="color" value="blue"> สีน้ำเงิน
+        <br><br>
+
+        <b>ผลไม้ที่ชอบ</b><br>
+        <input type="checkbox" name="fruit" value="mango"> มะม่วง
+        <input type="checkbox" name="fruit" value="custard-apple"> น้อยหน่า
+        <input type="checkbox" name="fruit" value="durian"> ทุเรียน
+        <input type="checkbox" name="fruit" value="longan"> ลำไย
+        <input type="checkbox" name="fruit" value="guava"> ฝรั่ง
+        <input type="checkbox" name="fruit" value="watermelon"> แตงโม
+        <br><br>
+
+        <b>อาหารที่ชื่นชอบ</b><br>
+        <input type="checkbox" name="food" value="tomyum"> ต้มยำกุ้ง
+        <input type="checkbox" name="food" value="omelette"> ไข่เจียวหมูสับ
+        <input type="checkbox" name="food" value="kha-kai"> แกงข่าไก่ <br>
+        <input type="checkbox" name="food" value="green-curry"> แกงเขียวหวานไก่
+        <input type="checkbox" name="food" value="padthai"> ผัดไทย
+        <input type="checkbox" name="food" value="radna"> ราดหน้าหมี่กรอบ
+        <br><br>
+
+        <div style="text-align:center;">
+            <input type="submit" value="บันทึก">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
